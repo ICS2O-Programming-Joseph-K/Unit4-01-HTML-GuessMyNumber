@@ -1,8 +1,7 @@
 'use strict'
 // Match generated number and guessed number
+function enterClicked () {
 
-let max = 100;
-let min = 0;
 
 let random = Math.floor((Math.random() * max) + min);
 
@@ -13,9 +12,19 @@ let True = "";
 let Guess = parseFloat(document.getElementById("Guess").value);
 
 // determine the display message depending on user input (True)
-if (Guess != random){
+if (Guess == random){
   True = "Correct.";
+}
+
+// determine the display message depending on user input (False)
+if (Guess != random){
+  False = "Incorrect.";
 }
 
   // display the results
   document.getElementById("user-info").innerHTML = True;
+
+    // display the results
+  document.getElementById("user-info").innerHTML = False;
+
+}
