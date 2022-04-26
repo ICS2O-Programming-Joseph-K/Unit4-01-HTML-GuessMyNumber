@@ -1,0 +1,27 @@
+
+body {
+	background-color: rgb(179, 244, 233);
+}
+
+h1 {
+	background-color: rgb(29, 198, 201);
+	color: hsl(0, 0%, 0%);
+	padding: 40px;
+	text-align: center;
+}
+
+p {
+	background-color: #007bff;
+}
+
+div {
+	
+  font-weight: bold;
+  color: #050505;
+  margin: 5px;
+}
+
+#display-results{
+  background-color: #ffffff;
+	font-size: 20px;
+}

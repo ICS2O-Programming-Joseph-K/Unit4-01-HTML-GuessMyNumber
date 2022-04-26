@@ -1,30 +1,30 @@
-'use strict'
+"use strict"
+
 // Match generated number and guessed number
 function enterClicked () {
+  	// initialize variables
+	let Output = ""
+  
+	// get user input
+	let Guess = parseInt(document.getElementById('Guess').value)
 
+  //cosnt or let???
+  let random = Math.floor((Math.random() * 6) + 1);
 
-let random = Math.floor((Math.random() * max) + min);
+  	// if guess matches random
+	if (Guess == random) {
+		Output = "Correct."
+	} 
+	// otherwise, if guess does not match random
+	else if (Guess != random) {
+		Output = "Incorrect."
+	}
 
-// initialize variables
-let True = "";
-
-  // get fahrenheit from text field
-let Guess = parseFloat(document.getElementById("Guess").value);
-
-// determine the display message depending on user input (True)
-if (Guess == random){
-  True = "Correct.";
-}
-
-// determine the display message depending on user input (False)
-if (Guess != random){
-  False = "Incorrect.";
-}
-
+  //Else statment for laer use
+	// else {
+		//Output = "Good evening..."
+	//}
+	
   // display the results
-  document.getElementById("user-info").innerHTML = True;
-
-    // display the results
-  document.getElementById("user-info").innerHTML = False;
-
+  document.getElementById('user-info').innerHTML = Output                                                                                                                                                                               
 }
